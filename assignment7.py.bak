@@ -1,0 +1,11 @@
+#assignment7: write a password generator of total length 15 using , 
+#6:digit 3 :lowercase letters, 3: uppercase letters,
+# 3 :special characters(#,$,&,!,@)
+
+import random
+
+char = "0123456789ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz#$&!@"
+password_length = int(input("Enter the length of password: "))
+
+password= "".join(random.sample(char,password_length))
+print("Generated password: %s", password)
